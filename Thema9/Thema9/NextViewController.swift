@@ -9,22 +9,25 @@ import UIKit
 
 class NextViewController: UIViewController {
 
-    var btnText: String?
-    @IBAction func didPressButton(_ sender: Any) {
-        guard let btn = sender as? UIButton else {
-            return
-        }
-        switch btn.tag {
-        case 1:
-            btnText = "東京都"
-        case 2:
-            btnText = "神奈川県"
-        case 3:
-            btnText = "埼玉県"
-        case 4:
-            btnText = "千葉県"
-        default:
-            break
-        }
+    private(set) var btnText: String?
+
+    @IBAction func didPressTokyoButton(_ sender: Any) {
+        btnText = "東京都"
+        performSegue(withIdentifier: "didPressTodohukenSegue", sender: sender)
+    }
+
+    @IBAction func didPressKanagawaButton(_ sender: Any) {
+        btnText = "神奈川県"
+        performSegue(withIdentifier: "didPressTodohukenSegue", sender: sender)
+    }
+
+    @IBAction func didPressSaitamaButton(_ sender: Any) {
+        btnText = "埼玉県"
+        performSegue(withIdentifier: "didPressTodohukenSegue", sender: sender)
+    }
+
+    @IBAction func didPressChibaButton(_ sender: Any) {
+        btnText = "千葉県"
+        performSegue(withIdentifier: "didPressTodohukenSegue", sender: sender)
     }
 }

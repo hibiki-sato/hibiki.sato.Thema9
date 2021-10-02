@@ -67,8 +67,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="東京都"/>
                                 <connections>
-                                    <action selector="didPressButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="bRF-Yz-utb"/>
-                                    <segue destination="R99-x8-j3y" kind="unwind" unwindAction="didPressTodohukenWithSegue:" id="a8f-n7-sHT"/>
+                                    <action selector="didPressTokyoButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="1zd-Jl-uQk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsC-1x-yO0">
@@ -77,8 +76,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="神奈川県"/>
                                 <connections>
-                                    <action selector="didPressButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="Ph7-mW-aVB"/>
-                                    <segue destination="R99-x8-j3y" kind="unwind" unwindAction="didPressTodohukenWithSegue:" id="LRi-vb-GeI"/>
+                                    <action selector="didPressKanagawaButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="bWn-pB-2hm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtd-Pe-Ubw">
@@ -87,8 +85,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="埼玉県"/>
                                 <connections>
-                                    <action selector="didPressButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="EN2-bi-AXG"/>
-                                    <segue destination="R99-x8-j3y" kind="unwind" unwindAction="didPressTodohukenWithSegue:" id="HyM-be-7XG"/>
+                                    <action selector="didPressSaitamaButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="QxU-aw-ctR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-7W-Tnq">
@@ -97,8 +94,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="千葉県"/>
                                 <connections>
-                                    <action selector="didPressButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="QAj-Tb-DO5"/>
-                                    <segue destination="R99-x8-j3y" kind="unwind" unwindAction="didPressTodohukenWithSegue:" id="81c-JY-K6z"/>
+                                    <action selector="didPressChibaButton:" destination="1Sr-U6-9S3" eventType="touchUpInside" id="VS8-d4-9gP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,6 +108,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="R99-x8-j3y" kind="unwind" identifier="didPressTodohukenSegue" unwindAction="didPressTodohukenWithSegue:" id="yrR-oY-9gG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gU8-Wl-anh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="R99-x8-j3y" userLabel="Exit" sceneMemberID="exit"/>
